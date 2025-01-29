@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+
+    <br><br>
+
+    <h1>Enter your Details</h1>
+
+    <form action="" name="f1" onsubmit="return validateForm()">
+
+        <label for="name">
+            Enter your name : 
+            <input type="text" name="name" id="name" required>
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="GO">
+
+        <br><br>
+
+        <label for="ph">
+            Enter phone : 
+            <input type="text" name="phone" id="phone" required>
+        </label>
+
+    </form>
+
+    <script>
+        function validateForm() 
+        {
+            var name = document.f1.name.value;
+            var phone = document.f1.phone.value;
+
+            alert('Hello... Hello ' + name);
+
+            var phonePattern = /^[0-9]{10}$/;
+            if (!phone.match(phonePattern)) {
+                alert('Please enter a valid phone number (10 digits)');
+                return false; 
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+</html>

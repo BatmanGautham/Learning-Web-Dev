@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+
+    <style>
+        body{background-color: black; text-align: center;}
+        p{color: aliceblue; font-size: 28px;}
+        h1{color: aliceblue; cursor: pointer;}
+    </style>
+</head>
+
+<body onload="test()">
+
+    <img src="e30_1.jpg" id="E30" height="500">
+
+    <h1 onclick="this.innerHTML = 'ooops!'">My page</h1>
+
+    <script>
+
+    window.onload = function() 
+        {
+            document.getElementById("E30").src = "E30.jpg";
+        };
+
+    </script>
+
+</body>
+</html>
+

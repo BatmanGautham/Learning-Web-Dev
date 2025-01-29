@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Sum using JS</h1>
+    <br>
+
+    <script>
+        var firstNum, secondNum,concat,sum;
+
+        firstNum = prompt("Enter first number : ")
+        secondNum = prompt("Enter second number : ")
+
+        concat = firstNum+secondNum
+
+        var num1 = parseFloat(firstNum);
+        var num2 = parseFloat(secondNum);
+        
+        sum = num1 + num2;
+
+        document.writeln("<h2>Concatination of " + firstNum + " and " + secondNum + " is " + sum + "</h2>");
+
+        document.writeln("<h2>Sum of " + firstNum + " and " + secondNum + " is " + sum + "</h2>");
+        
+
+        var thirdNum;
+
+        thirdNum = prompt("Enter another number : ")
+
+        if(thirdNum < 0)
+         {
+            document.writeln("<h2>Third number is negative</h2>");
+         }
+        else
+         {
+            document.writeln("<h2>Third number is positive</h2>");
+         }
+
+
+         var sumEven=0;
+        
+
+         for(var i=0 ; i<=100 ;i=i+2)
+          {
+            sumEven = sumEven + i;
+          }
+
+        document.write("<h2>Sum of Even numbers from 0 to 100 is : "+sumEven+"</h2>");
+
+    </script>
+</body>
+</html>

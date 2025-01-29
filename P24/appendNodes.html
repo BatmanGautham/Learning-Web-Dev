@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JavaScript HTML DOM</h1>
+    <p>This is from html </p>
+
+    <div id="div1">
+        <p>Hello World</p>
+    </div>
+
+    <script>
+        const para = document.createElement("p");
+        const node = document.createTextNode("This is now para which is from JS!")
+
+        para.appendChild(node);
+
+        const element = document.getElementById("div1");
+        element.appendChild(para);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <h1>Lets Find some Factorials</h1>
+    <p>Lets Go then</p>
+    <button onclick="calculate()">Go</button>
+
+    <br><br>
+
+    <p id="result"> </p>
+
+
+    <script>
+
+        function fact(num)
+        {
+            if(num == 0 || num == 1)
+            {
+                return 1
+            }
+            else
+            {
+                return num*fact(num-1)
+            }
+        }
+
+        function calculate()
+        {
+            const num = Number(prompt("Enter a number : "));
+
+            const res = fact(num);
+
+            document.getElementById("result").textContent = "Result is : "+res;
+        }
+    </script>
+</body>
+</html>

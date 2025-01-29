@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Calculator</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #result {
+            font-weight: 400;
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cube Calculator</h1>
+    <p>Enter a number to find its cube:</p>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="calculateCube()">Calculate Cube</button>
+    <h3 id="result"></h3>
+
+    <script>
+        function calculateCube() 
+        {
+            const number = Number(document.getElementById("numberInput").value);
+            
+            const cube = number ** 3;
+
+            document.getElementById("result").textContent = `The cube of ${number} is ${cube}.`;
+        }
+    </script>
+</body>
+</html>

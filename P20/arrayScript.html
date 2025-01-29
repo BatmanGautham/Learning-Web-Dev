@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(237, 131, 131);">
+
+    <br><br><br>
+    <h1 style="color: aliceblue;text-align: center;">Hello Vind</h1>
+
+    <script>
+        var s = ["Aravind","Fullvind","Halfvind","Quatervind"];
+
+        alert("String is : "+s)
+        alert(s[0]+" "+s[1]+" "+s[3]);
+        alert(s)
+
+        alert(s[0]+"\n"+s[1]+"\n"+s[3]);
+
+        alert("length of Array is "+s.length)
+
+        s.push("Novind")
+        alert("Updated String(Push) : "+s) 
+
+        s.pop()
+        alert("Updated String(Pop) : "+s)
+        
+        s.shift()
+        alert("Updated String(Shift) : "+s)
+
+        s.unshift("Mukalvind")
+        alert("Updated String(Unshift) : "+s)
+
+        delete s[0]
+        alert("Updated String(Unshift) : "+s)
+
+        for(i in s)
+         {
+            document.write(s[i]+"<br>")
+         }
+
+        s.splice(2,0,"Pakuthivind","Kaalvind")
+
+        for(i in s)
+         {
+            document.write(s[i]+"<br>")
+         }
+
+        s.splice(1)
+
+         for(i in s)
+         {
+            document.write(s[i]+"<br>")
+         }
+
+    </script>
+    
+</body>
+</html>
